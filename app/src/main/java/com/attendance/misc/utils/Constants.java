@@ -13,10 +13,10 @@ public class Constants {
      * Server url
      *
      */
-    public static final String LOGINURL = "http://aniketmehendale204.000webhostapp.com/attendance/login.php";
-    public static final String INSERTATTEND = "http://aniketmehendale204.000webhostapp.com/attendance/insertAttendance.php";
-    public static final String VIEWATTENDANCE = "http://aniketmehendale204.000webhostapp.com/attendance/viewAttendance.php";
-    public static final String QUICKATTENDANCE = "http://aniketmehendale204.000webhostapp.com/quickAttendance.php";
+    public static final String LOGINURL = "addyourlink";
+    public static final String INSERTATTEND = "addyourlink";
+    public static final String VIEWATTENDANCE = "addyourlink";
+    public static final String QUICKATTENDANCE = "addyourlink";
 
 
     /**
