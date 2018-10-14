@@ -236,8 +236,8 @@ public class SubjectFragment extends BaseFragment implements NavigationView.OnNa
         //////////////// Data fill in arraylist //////////////
         divList.add("A");
         divList.add("B");
-        statusList.add("Present");
-        statusList.add("Absent");
+        statusList.add("present");
+        statusList.add("absent");
         timelist.add("10:00Am - 10:50Am");
         timelist.add("10:50Am - 11:40Am");
         timelist.add("11:40Am - 12:30Pm");
