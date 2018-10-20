@@ -159,26 +159,20 @@ public class AttendanceViewFragment extends BaseFragment {
         String status = prefrences.getStatus();
         Log.d("StartDate", startDate);
         Log.d("EndDate", endDate);
-        TextView b6 = new TextView(getContext());
-        b6.setText("Sn");
-        b6.setTextColor(Color.BLUE);
-        b6.setTextSize(16);
-        b6.setPadding(10,10,10,10);
-        tr.addView(b6);
         TextView b19 = new TextView(getContext());
-        b19.setPadding(10,10,10,10);
+        b19.setPadding(15,10,15,10);
         b19.setTextSize(16);
-        b19.setText("Rollno");
+        b19.setText("Roll no.");
         b19.setTextColor(Color.BLUE);
         tr.addView(b19);
         TextView b29 = new TextView(getContext());
-        b29.setPadding(10,10,10,10);
+        b29.setPadding(15,10,15,10);
         b29.setText("Total");
         b29.setTextColor(Color.BLUE);
         b29.setTextSize(16);
         tr.addView(b29);
         TextView b30 = new TextView(getContext());
-        b30.setPadding(10,10,10,10);
+        b30.setPadding(15,10,15,10);
         b30.setText("Percentage");
         b30.setTextColor(Color.BLUE);
         b30.setTextSize(16);
@@ -206,33 +200,26 @@ public class AttendanceViewFragment extends BaseFragment {
                                 JSONObject json;
                                 try {
                                     json = response.getJSONObject(i);
-                                    attendanceResult.setId(i+1);
                                     attendanceResult.setAtrollno(json.getString("Rollno"));
                                     attendanceResult.setTotal(json.getString("Total"));
                                     double d = Double.parseDouble(json.getString("Percentage"));
                                     String percent = new DecimalFormat("#").format(d);
                                     attendanceResult.setPercentage(percent);
                                     Log.d("viewat",json.getString("Rollno")+" "+ json.getString("Total") + json.getString("Percentage"));
-                                    TextView b = new TextView(getContext());
-                                    b.setText(String.valueOf(attendanceResult.getId()));
-                                    b.setTextColor(Color.BLACK);
-                                    b.setPadding(10, 10, 10, 10);
-                                    b.setTextSize(16);
-                                    tableRow.addView(b);
                                     TextView b1 = new TextView(getContext());
-                                    b1.setPadding(10, 10, 10, 10);
+                                    b1.setPadding(15,10,15,10);
                                     b1.setTextSize(16);
                                     b1.setText(attendanceResult.getAtrollno());
                                     b1.setTextColor(Color.BLACK);
                                     tableRow.addView(b1);
                                     TextView b2 = new TextView(getContext());
-                                    b2.setPadding(10, 10, 10, 10);;
+                                    b2.setPadding(15,10,15,10);
                                     b2.setText(attendanceResult.getTotal());
                                     b2.setTextColor(Color.BLACK);
                                     b2.setTextSize(16);
                                     tableRow.addView(b2);
                                     TextView b3 = new TextView(getContext());
-                                    b3.setPadding(10, 10, 10, 10);
+                                    b3.setPadding(15 ,10,15,10);
                                     b3.setText(attendanceResult.getPercentage());
                                     b3.setTextColor(Color.BLACK);
                                     b3.setTextSize(16);
@@ -271,7 +258,4 @@ public class AttendanceViewFragment extends BaseFragment {
         }
         return true;
     }
-
-
-
 }
