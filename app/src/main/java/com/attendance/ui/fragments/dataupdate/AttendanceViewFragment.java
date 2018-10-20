@@ -258,4 +258,5 @@ public class AttendanceViewFragment extends BaseFragment {
         }
         return true;
     }
+    
 }
